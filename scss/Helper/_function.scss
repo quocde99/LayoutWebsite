@@ -1,0 +1,14 @@
+// function get color
+@function getColor($color){
+ @if map-has-key($map: $colors, $key:$color ){
+    @return map-get($map:$colors,$key:$color);
+ }
+ @return "";
+}
+// get font size
+@function getFontSize($f){
+    @if map-has-key($map: $fs, $key:$f ){
+        @return map-get($map:$fs,$key:$f);
+    }
+    @return "";
+}

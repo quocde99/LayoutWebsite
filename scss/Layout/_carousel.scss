@@ -1,0 +1,33 @@
+.myCarousel{
+    margin-top: 20px;
+    .carousel{
+        position: relative;
+    }
+    .btn-play{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        opacity: 0;
+        cursor: pointer;
+        transition: all .5s;
+    }
+    &:hover .btn-play{
+        opacity: 1 ;
+    }
+    .carousel-indicators{
+        margin-bottom: 100px;
+        li{
+            height: 12px;
+            width: 12px;
+            border: none;
+            border-radius: 50%;
+            background-color: getColor('color-white');
+        }
+    }
+    .carousel-indicators{
+        .active{
+            background-color: getColor('color-orange1');
+        }
+    }
+}

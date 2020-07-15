@@ -1,0 +1,32 @@
+.search{
+    margin:auto;
+    margin-top: -40px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    .container{
+        width: 940px;;
+        height: 80px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: getColor('color-white');
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0,0,0,.3);
+    }
+    .btn__muave{
+        width: 100%;
+        background-color: getColor('color-grey');
+        color: getColor('color-white');
+        border: none;
+        border-radius: 5px;
+        padding: 5px 0;
+    }
+}
+@media screen and (max-width:992px){
+ .search{
+     display: none;
+ }   
+}

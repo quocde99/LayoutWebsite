@@ -1,0 +1,13 @@
+.btn__more{
+    background-color: getColor('color-white');
+    border:1px solid getColor('color-grey');
+    padding: 3px 10px;
+    border-radius: 5px;
+    color: getColor('color-grey');
+    &:hover{
+        transition: all .5s;
+        background-color: getColor('color-orange2');
+        border: none;
+        color: getColor('color-white');
+    }
+}

@@ -1,0 +1,60 @@
+@import "../Component/btnmore";
+.review{
+    .container{
+        width: 65%;
+        .row{
+            .movie__center{
+                margin: 0 auto;
+                a{
+                    font-size: getFontSize('fs-03');
+                    border: none;
+                }
+                .nav {
+                   .nav-item.nav-link{
+                    color: getColor('color-black');
+                   } 
+                   .nav-item.nav-link.active{
+                    
+                    color: getColor('color-orange1');
+                   }
+                }
+            }
+            .review__itemslg{
+                cursor: pointer;
+                img{
+                    width: 100%;
+                    border-radius: 5px;
+                }
+                a{
+                    color:  getColor('color-black');
+                    font-weight: bold;
+                    font-size: 16px;
+                    text-decoration: none;
+                }
+                a:hover{
+                    transition: all .5s;
+                    color: getColor('color-orange1');
+                }
+                i{
+                    cursor: pointer;
+                }
+            }
+            .review__new{
+                .review__newitems{
+                    height: 60px;
+                    cursor: pointer;
+                    img {
+                        height: 50px;
+                        width: 50px;
+                        border-radius: 2px;
+                    }
+                    p{
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        color: getColor('color-grey');
+                    }
+                }
+            }
+        }
+    }
+}

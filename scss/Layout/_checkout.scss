@@ -1,0 +1,188 @@
+.checkout{
+    .container-fuild{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .checkout__header{
+        justify-content: space-evenly;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        background-color: #fff;
+        padding: 10px 0;
+        .checkout__text{
+            .active{
+                color: getColor('color-orange1');
+            }
+            p{
+                color: getColor('color-black');
+                font-size: 12px;
+                margin: auto;
+                font-weight:500;
+                letter-spacing: 1px;
+            }
+        }
+        .checkout__avt{
+            img{
+                width: 50px;
+                height: 50px;
+                border: 1px solid #ffffff;
+                border-radius: 50%;
+            }
+        }
+    }
+    .checkout__seat{
+        width: 90%;
+        margin:  0 auto;
+        text-align: center;
+        justify-content: space-between;
+        .lefttitle{
+           img{
+               width: 50px;
+           }
+        }
+        .topContent .righttitle {
+            margin-top: 10px;
+            width: 75px;
+        }
+        .righttitle{
+            .info2{
+                font-size: 29px;
+                color: getColor('color-orange1');
+            }
+        }
+    }
+    .namescreen{
+        text-align: center;
+        img{
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
+    .checkout__location{
+        .checkout__row{
+            p{
+                width: 20%;
+                margin-bottom:10px;
+            }
+            .checkout__vitri{
+                width: 80%;
+                .s-img{
+                    width: 20px;
+                    height: 20px;
+                    border: 1px solid #000000;
+                    margin: 0 auto;
+                    cursor: pointer;
+                    margin-right: 3px;
+                    background-color: #3e515d;
+                }
+                .checkout__left,.checkout__center{
+                    margin-right: 50px;
+                }
+                .checkout__end{
+                    width: 42%;
+                   
+                }
+            }
+        }
+    }
+    .typeseat{
+        width: 65%;
+        margin: 0 auto;
+        .type{
+            width: 10%;
+            text-align: center;
+            span{
+                font-size: 10px;
+            }
+            .color__thuong{
+                background-color: #3e515d;
+            }
+            .color__vip{
+                background-color:#f7b500;
+            }
+            .color__deluxe{
+                background-color: #4a90e2;
+            }
+            .color__choose{
+                background-color: #44c020;
+            }
+            .color__rechoose{
+                background-color: #e7eaec;
+            }
+            .color__nochoose{
+                background-color: rgba(16,34,53,.2);
+            }
+        }
+        .s-img{
+            width: 20px;
+            height: 20px;
+            border: 1px solid #000000;
+            margin: 0 auto;
+            cursor: pointer;
+        }
+    }
+
+    .checkout__datve{
+        position: relative;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        .checkout__price{
+            font-size: 42px;
+            color: #44c020;
+            text-align: center;
+            border-bottom:  1px dashed #e9e9e9;
+        }
+        .checkout__info{
+            text-align: left;
+            p:first-child{
+                font-size: 30px;
+            }
+            border-bottom:  1px dashed #e9e9e9;
+        }
+        .checkout__ghe{
+            display: flex;
+            justify-content: space-between;
+            border-bottom:  1px dashed #e9e9e9;
+            &>p{
+                color: #44c020;
+            }
+            img{
+                width: 30px;
+                height: 30px;
+            }
+            .popcorn{
+                display: flex;
+                justify-content: left;
+            }
+        }
+      .checkout__form{
+          input{
+              width: 100%;
+              border: none;
+              border-bottom:  1px dashed #e9e9e9;
+              margin: 15px 0;
+          }
+          .checkout__giamgia{
+              display: flex;
+              button{
+                  width: 25%;
+                  border: none;
+                  border-radius: 5px;
+              }
+          }
+          .checkout__ht{
+              p:last-child{
+                  color: #fa5238;
+                  font-size: 10px;
+              }
+          }
+      }
+      .btn-datve{
+          position: absolute;
+          bottom: 0;
+          right: 3px;
+          width: 100%;
+          border: none;
+          padding: 10px 0;
+          font-size: 22px;
+      }
+    }
+}

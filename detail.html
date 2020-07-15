@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>TIX - Đặt vé nhanh nhất / Trang Chủ</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/detail.css">
+</head>
+  <body>
+    <header class="header container-fluid pb-3">
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+           <a class="navbar-brand" href="#"><img class="logo" src="./img/web-logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo" aria-controls="navbarTogglerDemo" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse header__items" id="navbarTogglerDemo">
+              <ul class="navbar-nav header__ul">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Lịch Chiếu</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Cụm Rạp</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Tin Tức</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Ứng Dụng</a>
+                </li>
+              </ul>
+              <ul class="navbar-nav header__items2">
+                <li class="nav-item">
+                  <img class="avatar"src="./img/avatar.png" alt="">
+                  <a>Đăng nhập</a>
+                </li>
+                <li class="nav-item header__items3 ml-4">
+                  <img src="./img/location-header.png" alt="location">
+                  <div class="dropdown">
+                        <a class="btn btn-sm dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hồ Chí Minh</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <a class="dropdown-item" href="#">Hà Nội</a>
+                          <a class="dropdown-item" href="#">Quảng Nam</a>
+                          <a class="dropdown-item" href="#">Đà Nẵng</a>
+                      </div>
+                  </div>
+                </li>
+              </ul>
+          </div>
+           
+        </nav>
+      </header>
+      <section class="detail">
+        <div class="detail__bg"></div>
+       <div class="container">
+         <div class="row">
+           <div class="col-3 detail__img">
+             <img src="./img/con-mua-tinh-dau-classic-again-15833817364841_215x318.jpg" alt="">
+            </div>
+            <div class="col-7 detail__content">
+              <p>19.06.2020</p>
+              <h5> <span class="green">P </span>Cơn Mưa Tình Đầu - Classic Again</h5>
+                      <p>100 phút - 0 IMDb - 2D/Digital</p>
+                      <button class="btn__muave">Mua Vé</button>
+            </div>
+            <!-- đánh giá  -->
+            <div class="col-sm-2 circleStar ng-scope" ng-if="filmDetail.avg_point > 0">
+              <div class="circleSum">
+              </div>
+              <div id="circlePercent" class="c100 p91">
+                <div class="circleBorder">
+                </div>
+                <span class="ng-binding" style="color: #ffffff;">9.1</span>
+                <div class="slice">
+                  <div class="bar"></div>
+                  <div class="fill"></div>
+                </div>
+              </div>
+              <div id="starMain" class="row star ng-binding" style="margin-top: 10px">
+                <img class="smallStar" src="./img/star1.png">
+                <img class="smallStar" src="./img/star1.png">
+                <img class="smallStar" src="./img/star1.png">
+                <img class="smallStar" src="./img/star1.png">
+                <img class="half" src="./img/star1.2.png">
+              </div>
+              <div class="row">
+                <span class="detailMainInfo1 ng-binding" >152 người đánh giá</span>
+              </div>
+            </div>
+            <!-- end -->
+            
+         </div>
+       </div>
+       <div class="bg__2"></div>
+       <div class="container detail__content2">
+        <div class="row">
+          <nav class="col-sm-12 block movie__center p-3">
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#lichchieu" role="tab" aria-controls="nav-home" aria-selected="true">Lịch chiếu</a>
+              <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#thongtin" role="tab" aria-controls="nav-profile" aria-selected="false">Thông tin</a>
+              <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#danhgia" role="tab" aria-controls="nav-profile" aria-selected="false">Đánh giá</a>
+            </div>
+          </nav>
+          <!-- danh sách nhà chiếu phim  -->
+          <div class="nav col-4 flex-column nav-pills calender__rap" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#cgv" role="tab" aria-controls="v-pills-home" aria-selected="true">
+              <img src="./img/ee621ee05dcd4565caead4f29421b41e.png" alt="">
+              <div class="clender__text">
+                <h3>CGV</h3>
+                <p>x3 vé có CGV 79k/vé</p>
+              </div>
+            </a>
+            <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#bhd" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+              <img src="./img/f32670fd0eb083c9c4c804f0f3a252ed.png" alt="">
+              <div class="clender__text">
+                <h3>BHD Start </h3>
+                <p>x3 vé có CGV 79k/vé</p>
+              </div>
+            </a>
+            <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#bhd" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+              <img src="./img/e520781386bd5436e94d6e15e193a005.png" alt="">
+              <div class="clender__text">
+                <h3>BHD Start </h3>
+                <p>x3 vé có CGV 79k/vé</p>
+              </div>
+            </a>
+            <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#bhd" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+              <img src="./img/cine.png" alt="">
+              <div class="clender__text">
+                <h3>BHD Start </h3>
+                <p>x3 vé có CGV 79k/vé</p>
+              </div>
+            </a>
+            <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#bhd" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+              <img src="./img/donga.png" alt="">
+              <div class="clender__text">
+                <h3>BHD Start </h3>
+                <p>x3 vé có CGV 79k/vé</p>
+              </div>
+            </a>
+            <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#bhd" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+              <img src="./img/mega.png" alt="">
+              <div class="clender__text">
+                <h3>BHD Start </h3>
+                <p>x3 vé có CGV 79k/vé</p>
+              </div>
+            </a>
+            <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#bhd" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+              <img src="./img/dio.jpg" alt="">
+              <div class="clender__text">
+                <h3>BHD Start </h3>
+                <p>x3 vé có CGV 79k/vé</p>
+              </div>
+            </a>
+            <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#bhd" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+              <img src="./img/lotte.png" alt="">
+              <div class="clender__text">
+                <h3>BHD Start </h3>
+                <p>x3 vé có CGV 79k/vé</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-8 detail__calender">
+            <div class="calender__lich d-flex">
+              <a href="#" class="active">
+                <p>Thứ 2</p>
+                 <p>29</p> 
+              </a>
+              <a href="#">
+                <p>Thứ 3</p>
+                 <p>30</p> 
+              </a>
+              <a href="#">
+                <p>Thứ 4</p>
+                 <p>1</p> 
+              </a>
+              <a href="#">
+                <p>Thứ 5</p>
+                 <p>2</p> 
+              </a>
+              <a href="#">
+                <p>Thứ 6</p>
+                 <p>3</p> 
+              </a>
+              <a href="#">
+                <p>Thứ 7</p>
+                 <p>4</p> 
+              </a>
+            </div>
+            <!-- địa chỉ -->
+            <div class="detail__address">
+              <div class="card text-left">
+                <div class="d-flex">
+                  <img class="card-img-top" src="./img/cgv-ct-plaza-15380174275707.jpg" alt="">
+                  <div class="detail__text">
+                    <p><span>CGV</span> - Crescent Mall</p>
+                    <p>CGV - Crescent MallLầu 5, Crescent Mall Đại lộ Nguyễn Văn Linh, Phú Mỹ Hưng Quận 7 TP. Hồ Chí Minh</p>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">2D Digital</h5>
+                  <div class="listTypeTime__items">
+                    <a href="#">18:20 <span>~ 20:20</span></a>
+                    <a href="#">18:20 <span>~ 20:20</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-2 footer__tix">
+              <h5>Tix</h5>
+              <p class="pt-3">FAQ</p>
+              <p>Brand Guidelines</p>
+            </div>
+            <div class="col-2 pt-5 footer__tt">
+              <p>Thỏa thuận sử dụng</p>
+              <p>Chính sách bảo mật</p>
+            </div>
+            <div class="col-4 footer__doitac">
+              <h5>Đối tác</h5>
+              <div class="footer__icons">
+                <div class="footer__items d-flex">
+                  <a href="#">
+                    <img src="./img/cgv.png" alt="">
+                  </a>
+                  <a href="#">
+                    <img src="./img/bhd.png" alt="">
+                  </a>
+                  <a href="#">
+                    <img src="./img/galaxycine.png" alt="">
+                  </a>
+                  <a href="#">
+                    <img src="./img/cinestar.png" alt="">
+                  </a>
+                  <a href="#">
+                    <img src="./img/404b8c4b80d77732e7426cdb7e24be20.png" alt="">
+                  </a>
+                </div>
+                <div class="footer__items d-flex">
+                  <a href="#">
+                    <img src="./img/cgv.png" alt="">
+                  </a>
+                  <a href="#">
+                    <img src="./img/bhd.png" alt="">
+                  </a>
+                  <a href="#">
+                    <img src="./img/galaxycine.png" alt="">
+                  </a>
+                  <a href="#">
+                    <img src="./img/cinestar.png" alt="">
+                  </a>
+                  <a href="#">
+                    <img src="./img/404b8c4b80d77732e7426cdb7e24be20.png" alt="">
+                  </a>
+                </div>
+                <div class="footer__items d-flex">
+                  <a href="#">
+                    <img src="./img/cgv.png" alt="">
+                  </a>
+                  <a href="#">
+                    <img src="./img/bhd.png" alt="">
+                  </a>
+                  <a href="#">
+                    <img src="./img/galaxycine.png" alt="">
+                  </a>
+                  <a href="#">
+                    <img src="./img/cinestar.png" alt="">
+                  </a>
+                  <a href="#">
+                    <img src="./img/404b8c4b80d77732e7426cdb7e24be20.png" alt="">
+                  </a>
+                </div>
+                <div class="footer__items d-flex">
+                  <a href="#">
+                    <img src="./img/cgv.png" alt="">
+                  </a>
+                  <a href="#">
+                    <img src="./img/bhd.png" alt="">
+                  </a>
+                  <a href="#">
+                    <img src="./img/galaxycine.png" alt="">
+                  </a>
+                  <a href="#">
+                    <img src="./img/cinestar.png" alt="">
+                  </a>
+                  <a href="#">
+                    <img src="./img/404b8c4b80d77732e7426cdb7e24be20.png" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-2 footer__mobiles">
+              <h5>Mobile app</h5>
+              <div class="footer__mobile f-flex pt-3">
+                <a href="#">
+                  <img src="./img/apple-logo.png"></img>
+                </a>
+                <a href="#">
+                  <img src="./img/android-logo.png"></img>
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-lg-2 footer__social">
+              <h5>Social</h5>
+              <div class="footer__mobile f-flex pt-3">
+                <a href="#">
+                  <img src="./img/facebook-logo.png"></img>
+                </a>
+                <a href="#">
+                  <img src="./img/zalo-logo.png"></img>
+                </a>
+              </div>
+            </div>
+            <hr>
+            <div class="col-2 footer__zico">
+              <a href="#">
+                <img src="./img/zion-logo.jpg"></img>
+              </a>
+            </div>
+            <div class="col-8 footer__text">
+              <p>TIX – SẢN PHẨM CỦA CÔNG TY CỔ PHẦN ZION</p>
+              <p>Địa chỉ: Z06 Đường số 13, Phường Tân Thuận Đông, Quận 7, Tp. Hồ Chí Minh, Việt Nam.</p>
+              <p>Giấy chứng nhận đăng ký kinh doanh số: 0101659783,</p>
+              <p>đăng ký thay đổi lần thứ 30, ngày 22 tháng 01 năm 2020 do Sở kế hoạch và đầu tư Thành phố Hồ Chí Minh cấp.</p>
+              <p>Số Điện Thoại (Hotline): 1900 545 436</p>
+              <p>Email: <a href="#"> support@tix.vn</a></p>
+            </div>
+            <div class="col-2 footer__bct">
+              <a href="#">
+                <img src="./img/d1e6bd560daa9e20131ea8a0f62e87f8.png"></img>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

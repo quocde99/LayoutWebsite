@@ -1,0 +1,11 @@
+h5{
+    font-size: 16px;
+    text-align: left;
+    .green{
+        color: getColor('color-white');
+        padding: 0 6px;
+        border: none;
+        border-radius: 2px;
+        background-color: getColor('color-green');
+    }
+}
